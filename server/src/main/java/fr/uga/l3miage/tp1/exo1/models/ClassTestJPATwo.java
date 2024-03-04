@@ -10,7 +10,7 @@ public class ClassTestJPATwo {
     @Id
     private String myIdTest;
 
-    @Column(unique)
+    @Column(unique=true)
     private String testName;
 
     @Column(precision = 1)
