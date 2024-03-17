@@ -3,6 +3,7 @@ package fr.uga.l3miage.tp1.exo2.models;
 import fr.uga.l3miage.tp1.exo2.enums.typeAccount;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 
 @Entity
 @Table(name="netflix_account")
@@ -11,7 +12,7 @@ public class NetflixAccountEntity {
     private Long bigint;
 
     @Column
-    private int nb_devices;
+    private Integer nb_devices;
 
     @Column
     @Enumerated(EnumType.ORDINAL)

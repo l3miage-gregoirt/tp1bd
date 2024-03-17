@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Table(name = "netflix_user")
 public class NetflixUserEntity {
     @Id
-    private long bigint;
+    private Long bigint;
 
     @Column
     private String uuid;
