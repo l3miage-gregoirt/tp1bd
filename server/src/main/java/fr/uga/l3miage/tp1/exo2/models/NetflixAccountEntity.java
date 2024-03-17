@@ -11,10 +11,10 @@ public class NetflixAccountEntity {
     @Id
     private Long bigint;
 
-    @Column
+    @Column(name="nombre de devices")
     private Integer nb_devices;
 
-    @Column
+    @Column(name="type du compte")
     @Enumerated(EnumType.ORDINAL)
     private typeAccount typeAccount;
 

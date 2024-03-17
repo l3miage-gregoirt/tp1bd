@@ -11,20 +11,20 @@ public class NetflixUserEntity {
     @Id
     private Long bigint;
 
-    @Column
+    @Column(name="id de l'utilisateur")
     private String uuid;
 
-    @Column
+    @Column(name="nom de famille")
     private String lastname;
 
-    @Column
+    @Column(name = "Prenom")
     private String firstname;
 
-    @Column
+    @Column(name ="sexe")
     @Enumerated(EnumType.ORDINAL)
     private Sex sex;
 
-    @Column
+    @Column(name ="date de naissance")
     private LocalDate birthDate;
 
 }

@@ -9,10 +9,6 @@ import java.time.OffsetDateTime;
 public class UserEntity {
     @Id
     private Long idUser;
-
-    @Column
     private Boolean SSO;
-
-    @Column
     private OffsetDateTime lastConnexion;
 }

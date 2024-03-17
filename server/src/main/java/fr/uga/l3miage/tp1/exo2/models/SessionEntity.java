@@ -10,14 +10,8 @@ import java.util.UUID;
 public class SessionEntity {
     @Id
     private UUID idSession;
-
-    @Column
     private String lastCommand;
-
-    @Column
     private String currentDir;
-
-    @Column
     private Boolean lock;
 
     @OneToOne
