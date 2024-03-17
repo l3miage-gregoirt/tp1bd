@@ -16,6 +16,6 @@ public class ProductEntity {
     @Column(name = "consomable")
     private Boolean consumable;
 
-    @OneToMany
+    @OneToMany(mappedBy = "product")
     private Set<BrandMiageEntity> brands;
 }
