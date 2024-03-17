@@ -14,6 +14,7 @@ public class BrandMiageEntity {
     private String siretNumber;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private BrandType type;
 
     @ManyToOne
