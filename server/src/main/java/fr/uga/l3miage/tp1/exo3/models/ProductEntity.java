@@ -10,10 +10,10 @@ public class ProductEntity {
     @Column(length = 15)
     private String bar_code_number;
 
-    @Column
+    @Column(name = "nom")
     private String name;
 
-    @Column
+    @Column(name = "consomable")
     private Boolean consumable;
 
     @OneToMany
