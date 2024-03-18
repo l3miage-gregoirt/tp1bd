@@ -24,6 +24,4 @@ public class AssociationEntity {
     @ManyToOne
     private FederationEntity federation;
 
-    @OneToMany(mappedBy = "association")
-    private Set<FederationEntity> ferations;
 }
