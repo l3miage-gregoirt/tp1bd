@@ -3,6 +3,7 @@ package fr.uga.l3miage.tp1.exo3.models;
 import fr.uga.l3miage.tp1.exo3.enums.AssociationType;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class AssociationEntity {
@@ -22,4 +23,7 @@ public class AssociationEntity {
 
     @ManyToOne
     private FederationEntity federation;
+
+    @OneToMany(mappedBy = "association")
+    private Set<FederationEntity> ferations;
 }

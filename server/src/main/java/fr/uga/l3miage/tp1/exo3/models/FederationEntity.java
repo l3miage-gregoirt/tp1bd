@@ -15,4 +15,7 @@ public class FederationEntity {
 
     @ManyToOne
     private AssociationEntity association;
+
+    @OneToMany(mappedBy = "federation")
+    private Set<AssociationEntity> associations;
 }
